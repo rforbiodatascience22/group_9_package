@@ -4,3 +4,6 @@
 ^mypkgname.*\.tar\.gz$
 ^mypkgname.*\.tgz$
 ^LICENSE\.md$
+^central_dogma\.Rcheck$
+^central_dogma.*\.tar\.gz$
+^central_dogma.*\.tgz$
