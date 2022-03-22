@@ -8,6 +8,8 @@
 #' @examples
 #' mRNA <- transcription("TCGGA")
 #'
+#'@importFrom magrittr %>%
+#'
 transcription <- function(dna_seq){
   # Substitute "T" with "U"
   mRNA_seq <- gsub("T", "U", dna_seq)
