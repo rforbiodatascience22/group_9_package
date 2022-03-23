@@ -11,10 +11,10 @@ main functions are included in this package so far.
 
 ## Functions
 
-2.  transcription(): It takes a DNA sequence as an input and returns the
+-   transcription(): It takes a DNA sequence as an input and returns the
     transcripted mRNA sequence as an output, which means all the “A”s
     are will be changed into “U”s.
-3.  AA_num_plot(): It takes an amino acid sequence as an input and
+-   AA_num_plot(): It takes an amino acid sequence as an input and
     returns the bar plot reflecting the number of each unique AA in the
     input sequence. The plot is saved as a variable called “AAplot” in
     inside of the function.
@@ -47,17 +47,17 @@ AAplot
 
 -   Disadvantages for not limiting the number of dependencies:
 
--   Anyone installing your package must also install the dependency
-    (which you’ve written about).
+    -   Anyone installing your package must also install the dependency
+        (which you’ve written about).
+    -   Anyone loading your package must also load all dependencies,
+        even if only into “background” namespaces.
+    -   Your package’s code is affected by dependencies.
 
--   Anyone loading your package must also load all dependencies, even if
-    only into “background” namespaces.
+-   *package::function()* Vs. *@importFrom package function*:
 
--   Your package’s code is affected by dependencies.
-
--   *package::function()* Vs. *@importFrom package function*: If you are
-    using just a few functions from another package, then it’s better to
-    note the package name in the **Imports:** field of the DESCRIPTION
-    file and call the function(s) explicitly using **::**, e.g.,
-    *pkg::fun()*. If you are using functions repeatedly, you can avoid
-    **::** by importing the function with *@importFrom pkg fun*.
+    -   If you are using just a few functions from another package, then
+        it’s better to note the package name in the **Imports:** field
+        of the DESCRIPTION file and call the function(s) explicitly
+        using **::**, e.g., *pkg::fun()*.
+    -   If you are using functions repeatedly, you can avoid **::** by
+        importing the function with *@importFrom pkg fun*.
