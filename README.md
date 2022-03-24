@@ -15,10 +15,11 @@ main functions are included in this package so far.
     a corresponding number of DAN sequence.
 -   transcription(): It takes a DNA sequence as an input and returns the
     transcripted mRNA sequence as an output, which means all the “A”s
-    are will be changed into “U”s. *generate_codons(): It takes mRNA
-    sequence as an input and generate the codon list. *translation(): It
-    takes a list of codons and translate each into corresponding amino
-    acids.
+    are will be changed into “U”s.
+-   generate_codons(): It takes mRNA sequence as an input and generate
+    the codon list.
+-   translation(): It takes a list of codons and translate each into
+    corresponding amino acids.
 -   AA_num_plot(): It takes an amino acid sequence as an input and
     returns the bar plot reflecting the number of each unique AA in the
     input sequence. The plot is saved as a variable called “AAplot” in
